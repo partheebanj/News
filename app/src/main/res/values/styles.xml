@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ArticleHeaderStyle">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AuthorStyle">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="DescriptionStyle">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="URLStyle">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColorLink">@color/linkify_blue</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="PublishedStyle">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+
+
+</resources>
