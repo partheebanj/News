@@ -73,7 +73,10 @@ public class ArticleListActivity extends BaseActivty {
     }
 
 
-    /* CALL-BACK : Article for specific News Source. */
+    /*
+     * CALL-BACK : Article for specific News Source.
+     *
+     */
     Response.Listener<JSONObject> callBackArticle = new Response.Listener<JSONObject>() {
         @Override
         public void onResponse(JSONObject response) {
@@ -86,7 +89,10 @@ public class ArticleListActivity extends BaseActivty {
     };
 
 
-    /* ERROR LISTENER : Article for specific News Source. */
+     /*
+      *  ERROR LISTENER : Article for specific News Source.
+      *
+      */
     Response.ErrorListener errorListenerArticle = new Response.ErrorListener() {
         @Override
         public void onErrorResponse(VolleyError error) {

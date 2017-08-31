@@ -48,7 +48,9 @@ public class SearchActivity extends BaseActivty {
     }
 
 
-    /* CALL-BACK : News Source. */
+    /*
+     * CALL-BACK : News Source.
+     */
     Response.Listener<JSONObject> callBackNewsSource = new Response.Listener<JSONObject>() {
         @Override
         public void onResponse(JSONObject response) {
@@ -67,7 +69,9 @@ public class SearchActivity extends BaseActivty {
     };
 
 
-    /* ERROR LISTENER : News Source. */
+    /*
+     * ERROR LISTENER : News Source.
+     */
     Response.ErrorListener errorListenerNewsSource = new Response.ErrorListener() {
         @Override
         public void onErrorResponse(VolleyError error) {
@@ -76,7 +80,9 @@ public class SearchActivity extends BaseActivty {
     };
 
 
-    /* Search Button click listener. */
+    /*
+     *  Search Button click listener.
+     */
     View.OnClickListener searchButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
