@@ -1,10 +1,11 @@
 package org.news.partheebanj.news.presentation;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -42,13 +43,33 @@ public class ArticleListActivity extends BaseActivty {
         if (!StringUtil.isEmptyString(mSourceId)) {
             populateArticleList(mSourceId);
         } else {
-            Toast.makeText(ArticleListActivity.this, "Please enter a valid news source", Toast.LENGTH_SHORT).show();
+            showInvalidSourceAlert();
         }
 
     }
 
     private void populateArticleList(String sourceId) {
         HttpRequestHelper.populateArticle(ArticleListActivity.this, sourceId, callBackArticle, errorListenerArticle);
+    }
+
+    private void showInvalidSourceAlert() {
+
+        AlertDialog.Builder ad = new AlertDialog.Builder(ArticleListActivity.this);
+        ad.setTitle("ALERT");
+        ad.setMessage("Please provide a valid news source.");
+        ad.setCancelable(false);
+
+        ad.setPositiveButton(
+                "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                        finish();
+                    }
+                });
+
+        AlertDialog alert = ad.create();
+        alert.show();
     }
 
 
