@@ -39,17 +39,6 @@
         android:visibility="gone"
         style="@style/DescriptionStyle"/>
 
-
-    <TextView
-        android:id="@+id/url_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/medium_margin"
-        android:paddingBottom="@dimen/medium_margin"
-        style="@style/URLStyle"
-        android:visibility="gone"
-        android:autoLink="web"/>
-
     <TextView
         android:id="@+id/article_author_tv"
         android:layout_width="match_parent"

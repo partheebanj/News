@@ -25,12 +25,6 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="URLStyle">
-        <item name="android:textSize">@dimen/text_size_12</item>
-        <item name="android:textColorLink">@color/linkify_blue</item>
-        <item name="android:textStyle">italic</item>
-    </style>
-
     <style name="PublishedStyle">
         <item name="android:textSize">@dimen/text_size_10</item>
         <item name="android:textStyle">italic</item>
