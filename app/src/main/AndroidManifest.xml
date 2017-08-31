@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presentation.SearchActivity">
+        <activity android:name=".presentation.SearchActivity"
+            android:label="Search">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +19,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".presentation.ArticleListActivity">
+        <activity android:name=".presentation.ArticleListActivity"
+            android:label="Articles">
         </activity>
     </application>
 
